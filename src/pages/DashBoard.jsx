@@ -19,7 +19,7 @@ const DashBoard = () => {
 
   useEffect(()=>{
     const fetchCount=async()=>{
-      const url=`http://localhost:8080/api/noOfResume/${localStorage.getItem("User ID")}`
+      const url=`${import.meta.env.VITE_API_URL}/api/noOfResume/${localStorage.getItem("User ID")}`
       const option={
         method:"GET",
         headers:{
@@ -38,7 +38,7 @@ const DashBoard = () => {
     fetchCount()
   })
   const createResume = async () => {
-    const url = "http://localhost:8080/api/create"
+    const url = `${import.meta.env.VITE_API_URL}/api/create`
     const options = {
       method: "POST",
       headers: {

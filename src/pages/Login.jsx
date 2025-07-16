@@ -20,7 +20,7 @@ const Login = () => {
             userName,
             password,
         }
-        const url='http://localhost:8080/auth/login'
+        const url=`${import.meta.env.VITE_API_URL}/auth/login`
         const options={
             method:"POST",
             headers:{
@@ -38,6 +38,7 @@ const Login = () => {
             localStorage.setItem("Token",data.token)
             localStorage.setItem("User ID",data.user_id)
             localStorage.setItem("User Name",data.user_name)
+            alert("Logged in Successfully")
             navigate("/dashboard")
         } catch (error) {
             console.log(error)

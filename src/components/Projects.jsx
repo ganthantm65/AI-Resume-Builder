@@ -37,7 +37,7 @@ const Projects = ({ data = [], update, next, previous }) => {
           />
           <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
           <input
-            placeholder="Description"
+            placeholder="Description(200 Characters)"
             value={project.description}
             onChange={(e) => handleChange(idx, "description", e.target.value)}
             className="w-full mb-2 p-2 rounded-lg bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"

@@ -30,7 +30,7 @@ const Certifications = ({ data = [], update, previous, formData }) => {
 
     const fullFormData = { ...formData, certifications: updatedCerts };
     
-    const url='http://localhost:8080/api/generate'
+    const url=`${import.meta.env.VITE_API_URL}/api/generate`
     
     const options={
         method:"POST",

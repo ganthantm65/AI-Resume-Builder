@@ -24,7 +24,7 @@ const SignUp = () => {
             password,
             email
         }
-        const url="http://localhost:8080/auth/register"
+        const url=`${import.meta.env.VITE_API_URL}/auth/register`
         const options={
             method:"POST",
             headers:{
@@ -37,12 +37,10 @@ const SignUp = () => {
             if(!response.ok){
                 throw new Error(response.statusText)
             }
-            const data=await response.json();
-            console.log(data);
-            
+            alert("Account Created Successfully")
             
         } catch (error) {
-            console.log(error)
+            alert(error);
         }
     }
   return (
