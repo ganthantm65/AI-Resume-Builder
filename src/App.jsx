@@ -10,7 +10,7 @@ import Result from './pages/Result'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path='/' element={<LandingPage/>} />
         <Route path='/auth/login' element={<Login/>}/>
