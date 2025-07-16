@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/craft-cv/**", "destination": "/craft-cv/index.html" }
+  ]
+}
