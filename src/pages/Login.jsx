@@ -56,7 +56,6 @@ const Login = () => {
       <div className='w-100 h-120 rounded-lg shadow-lg flex flex-col items-center justify-evenly bg-white p-6'>
         <h1 className='text-3xl text-blue-600 font-roboto font-extrabold'>Login</h1>
 
-        {/* Username Field */}
         <div className='w-80 h-15 rounded-lg shadow-lg p-5 flex flex-row items-center justify-between gap-2 font-monts bg-white'>
           <p><FontAwesomeIcon icon={faUser} /></p>
           <input
@@ -69,7 +68,6 @@ const Login = () => {
           />
         </div>
 
-        {/* Password Field */}
         <div className='w-80 h-15 rounded-lg shadow-lg p-5 flex flex-row items-center justify-between gap-2 font-monts bg-white'>
           <p><FontAwesomeIcon icon={faLock} /></p>
           <input
@@ -89,7 +87,6 @@ const Login = () => {
           </button>
         </div>
 
-        {/* Login Button with Loader */}
         <button
           onClick={validateLogin}
           disabled={loading}
