@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-monts: 'Montserrat', sans-serif;
+}
