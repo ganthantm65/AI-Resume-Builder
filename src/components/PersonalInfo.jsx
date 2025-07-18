@@ -34,7 +34,7 @@ const PersonalInfo = ({ data, update, next }) => {
             value={info.name || ""}
             onChange={handleChange}
             placeholder="Jane Smith"
-            className="w-full p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+            className="w-120 p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
           />
         </div>
 
@@ -46,7 +46,7 @@ const PersonalInfo = ({ data, update, next }) => {
             value={info.email_id || ""}
             onChange={handleChange}
             placeholder="jane@example.com"
-            className="w-full p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+            className="w-120  p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
           />
         </div>
 
@@ -57,7 +57,7 @@ const PersonalInfo = ({ data, update, next }) => {
             value={info.role || ""}
             onChange={handleChange}
             placeholder="Full Stack Developer"
-            className="w-full p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+            className="w-120 p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
           />
         </div>
 
@@ -68,7 +68,7 @@ const PersonalInfo = ({ data, update, next }) => {
             value={info.linked_url || ""}
             onChange={handleChange}
             placeholder="https://linkedin.com/in/yourname"
-            className="w-full p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+            className="w-120 p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
           />
         </div>
 
@@ -79,7 +79,7 @@ const PersonalInfo = ({ data, update, next }) => {
             value={info.github_url || ""}
             onChange={handleChange}
             placeholder="https://github.com/yourusername"
-            className="w-full p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+            className="w-120 p-2 sm:p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
           />
         </div>
       </div>
