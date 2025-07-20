@@ -125,14 +125,14 @@ const Result = () => {
               ref={targetRef}
               className="shadow-xl transition-all duration-300 bg-white"
               style={{
-                width: '794px',
-                minHeight: '1123px',
-                padding: '60px',
+                width: '900px',
+                minHeight: '1270px',
+                padding: '80px',
                 backgroundColor: template === 'classic' ? '#ffffff' : '#ffffff',
                 color: '#1f2937',
                 border: template === 'classic' ? '1px solid #e5e7eb' : 'none',
-                fontSize: '14px',
-                lineHeight: '1.5',
+                fontSize: '16px',
+                lineHeight: '1.6',
                 fontFamily: 'Arial, sans-serif'
               }}
             >
@@ -141,13 +141,13 @@ const Result = () => {
                   h1: ({ children, ...props }) => (
                     <h1 
                       style={{
-                        fontSize: '28px',
+                        fontSize: '32px',
                         fontWeight: 'bold',
-                        marginBottom: '16px',
+                        marginBottom: '20px',
                         textAlign: 'center',
                         borderBottom: '4px solid #3b82f6',
-                        paddingBottom: '12px',
-                        padding: '16px',
+                        paddingBottom: '16px',
+                        padding: '20px',
                         borderRadius: '8px 8px 0 0',
                         color: '#1d4ed8',
                         backgroundColor: '#eff6ff'
@@ -160,13 +160,13 @@ const Result = () => {
                   h2: ({ children, ...props }) => (
                     <h2 
                       style={{
-                        fontSize: '20px',
+                        fontSize: '24px',
                         fontWeight: 'bold',
-                        marginTop: '24px',
-                        marginBottom: '12px',
+                        marginTop: '28px',
+                        marginBottom: '16px',
                         borderLeft: '4px solid #60a5fa',
-                        paddingLeft: '16px',
-                        paddingBottom: '8px',
+                        paddingLeft: '20px',
+                        paddingBottom: '10px',
                         borderBottom: '2px solid #93c5fd',
                         borderRadius: '0 8px 8px 0',
                         color: '#2563eb',
@@ -180,12 +180,12 @@ const Result = () => {
                   h3: ({ children, ...props }) => (
                     <h3 
                       style={{
-                        fontSize: '16px',
+                        fontSize: '18px',
                         fontWeight: '600',
-                        marginTop: '16px',
-                        marginBottom: '8px',
+                        marginTop: '20px',
+                        marginBottom: '10px',
                         borderLeft: '2px solid #60a5fa',
-                        paddingLeft: '12px',
+                        paddingLeft: '16px',
                         borderRadius: '0 6px 6px 0',
                         color: '#3b82f6',
                         backgroundColor: '#f0f9ff'
@@ -200,8 +200,8 @@ const Result = () => {
                       style={{
                         listStyleType: 'disc',
                         listStylePosition: 'inside',
-                        marginLeft: '16px',
-                        marginBottom: '16px'
+                        marginLeft: '20px',
+                        marginBottom: '20px'
                       }} 
                       {...props}
                     >
@@ -211,10 +211,10 @@ const Result = () => {
                   li: ({ children, ...props }) => (
                     <li 
                       style={{
-                        fontSize: '14px',
-                        lineHeight: '1.6',
+                        fontSize: '16px',
+                        lineHeight: '1.7',
                         color: '#374151',
-                        marginBottom: '8px'
+                        marginBottom: '10px'
                       }} 
                       {...props}
                     >
@@ -224,9 +224,9 @@ const Result = () => {
                   p: ({ children, ...props }) => (
                     <p 
                       style={{
-                        fontSize: '14px',
-                        marginBottom: '12px',
-                        lineHeight: '1.6',
+                        fontSize: '16px',
+                        marginBottom: '16px',
+                        lineHeight: '1.7',
                         color: '#374151'
                       }} 
                       {...props}
