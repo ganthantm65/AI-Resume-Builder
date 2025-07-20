@@ -119,82 +119,148 @@ const Result = () => {
           </button>
         </div>
 
-        <div className="px-4 md:px-6 py-6">
-          <div
-            ref={targetRef}
-            className="max-w-full rounded-xl shadow-xl p-8 transition-all duration-300 bg-white"
-            style={{
-              backgroundColor: template === 'classic' ? '#ffffff' : '#ffffff',
-              color: '#1f2937',
-              border: template === 'classic' ? '1px solid #e5e7eb' : 'none'
-            }}
-          >
-            <ReactMarkdown
-              components={{
-                h1: ({ children, ...props }) => (
-                  <h1 className="text-3xl font-bold mb-4 text-center border-b-4 pb-3 p-4 rounded-t-lg shadow-md"
-                      style={{
-                        color: '#1d4ed8',
-                        borderColor: '#3b82f6',
-                        backgroundColor: '#eff6ff'
-                      }} {...props}>
-                    {children}
-                  </h1>
-                ),
-                h2: ({ children, ...props }) => (
-                  <h2 className="text-xl font-bold mt-6 mb-3 border-l-4 pl-4 pb-2 rounded-r-lg shadow-sm border-b-2"
-                      style={{
-                        color: '#2563eb',
-                        borderLeftColor: '#60a5fa',
-                        borderBottomColor: '#93c5fd',
-                        backgroundColor: '#eff6ff'
-                      }} {...props}>
-                    {children}
-                  </h2>
-                ),
-                h3: ({ children, ...props }) => (
-                  <h3 className="text-lg font-semibold mt-4 mb-2 border-l-2 pl-3 rounded-r-md"
-                      style={{
-                        color: '#3b82f6',
-                        borderLeftColor: '#60a5fa',
-                        backgroundColor: '#f0f9ff'
-                      }} {...props}>
-                    {children}
-                  </h3>
-                ),
-                ul: ({ children, ...props }) => (
-                  <ul className="list-disc list-inside ml-4 space-y-2 mb-4" {...props}>
-                    {children}
-                  </ul>
-                ),
-                li: ({ children, ...props }) => (
-                  <li className="text-sm leading-relaxed"
-                      style={{ color: '#374151' }} {...props}>
-                    {children}
-                  </li>
-                ),
-                p: ({ children, ...props }) => (
-                  <p className="text-sm mb-3 leading-relaxed"
-                     style={{ color: '#374151' }} {...props}>
-                    {children}
-                  </p>
-                ),
-                strong: ({ children, ...props }) => (
-                  <strong className="font-bold"
-                          style={{ color: '#1f2937' }} {...props}>
-                    {children}
-                  </strong>
-                ),
-                em: ({ children, ...props }) => (
-                  <em className="italic"
-                      style={{ color: '#4b5563' }} {...props}>
-                    {children}
-                  </em>
-                ),
+        <div className="flex-1 flex justify-center items-start py-6 px-4 overflow-auto">
+          <div className="flex justify-center w-full">
+            <div
+              ref={targetRef}
+              className="shadow-xl transition-all duration-300 bg-white"
+              style={{
+                width: '794px',
+                minHeight: '1123px',
+                padding: '60px',
+                backgroundColor: template === 'classic' ? '#ffffff' : '#ffffff',
+                color: '#1f2937',
+                border: template === 'classic' ? '1px solid #e5e7eb' : 'none',
+                fontSize: '14px',
+                lineHeight: '1.5',
+                fontFamily: 'Arial, sans-serif'
               }}
             >
-              {resumeText}
-            </ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  h1: ({ children, ...props }) => (
+                    <h1 
+                      style={{
+                        fontSize: '28px',
+                        fontWeight: 'bold',
+                        marginBottom: '16px',
+                        textAlign: 'center',
+                        borderBottom: '4px solid #3b82f6',
+                        paddingBottom: '12px',
+                        padding: '16px',
+                        borderRadius: '8px 8px 0 0',
+                        color: '#1d4ed8',
+                        backgroundColor: '#eff6ff'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </h1>
+                  ),
+                  h2: ({ children, ...props }) => (
+                    <h2 
+                      style={{
+                        fontSize: '20px',
+                        fontWeight: 'bold',
+                        marginTop: '24px',
+                        marginBottom: '12px',
+                        borderLeft: '4px solid #60a5fa',
+                        paddingLeft: '16px',
+                        paddingBottom: '8px',
+                        borderBottom: '2px solid #93c5fd',
+                        borderRadius: '0 8px 8px 0',
+                        color: '#2563eb',
+                        backgroundColor: '#eff6ff'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </h2>
+                  ),
+                  h3: ({ children, ...props }) => (
+                    <h3 
+                      style={{
+                        fontSize: '16px',
+                        fontWeight: '600',
+                        marginTop: '16px',
+                        marginBottom: '8px',
+                        borderLeft: '2px solid #60a5fa',
+                        paddingLeft: '12px',
+                        borderRadius: '0 6px 6px 0',
+                        color: '#3b82f6',
+                        backgroundColor: '#f0f9ff'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </h3>
+                  ),
+                  ul: ({ children, ...props }) => (
+                    <ul 
+                      style={{
+                        listStyleType: 'disc',
+                        listStylePosition: 'inside',
+                        marginLeft: '16px',
+                        marginBottom: '16px'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </ul>
+                  ),
+                  li: ({ children, ...props }) => (
+                    <li 
+                      style={{
+                        fontSize: '14px',
+                        lineHeight: '1.6',
+                        color: '#374151',
+                        marginBottom: '8px'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </li>
+                  ),
+                  p: ({ children, ...props }) => (
+                    <p 
+                      style={{
+                        fontSize: '14px',
+                        marginBottom: '12px',
+                        lineHeight: '1.6',
+                        color: '#374151'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </p>
+                  ),
+                  strong: ({ children, ...props }) => (
+                    <strong 
+                      style={{
+                        fontWeight: 'bold',
+                        color: '#1f2937'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </strong>
+                  ),
+                  em: ({ children, ...props }) => (
+                    <em 
+                      style={{
+                        fontStyle: 'italic',
+                        color: '#4b5563'
+                      }} 
+                      {...props}
+                    >
+                      {children}
+                    </em>
+                  ),
+                }}
+              >
+                {resumeText}
+              </ReactMarkdown>
+            </div>
           </div>
         </div>
       </div>
