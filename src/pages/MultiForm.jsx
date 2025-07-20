@@ -75,7 +75,7 @@ const MultiForm = () => {
           </div>
         </div>
 
-        <div className="p-4 sm:p-6 w-full sm:w-250 h-auto sm:h-178 bg-white rounded-lg ml-0 sm:ml-5 mt-3 shadow overflow-y-auto">
+        <div className="p-4 sm:p-6 w-full sm:w-300 h-auto sm:h-178 bg-white rounded-lg ml-0 sm:ml-5 mt-3 shadow overflow-y-auto">
           {setForm()}
         </div>
       </div>
